@@ -1,10 +1,5 @@
-size = int(input("Enter the size of the pattern: "))
-while size <= 0:
-        print("Please enter a positive integer.")
-        size = int(input("Enter the size of the pattern: "))
-row = 0
-while row < size:
-    for _ in range(size):
-        print("*", end="")
-    print()
-    row += 1
+number = abs(int(input("Enter the size of the pattern: ")))
+while number >= 1:
+    for i in range(0, number):
+        print("*" * number)
+    break
