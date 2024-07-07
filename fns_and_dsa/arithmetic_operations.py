@@ -11,8 +11,10 @@ def perform_operation(num1, num2, operation):
 
                 print("Division by 0 is not possible.")
                 
+            elif num2 !=0:
+                return num1 / num2
             else:
-                return num1 / num2 
+                print("phew")
         case _:
             print("Please choose 1 of the 4 operations.")
 
