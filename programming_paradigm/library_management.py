@@ -23,7 +23,7 @@ class Library:
         print(f"Book '{title}' is either not available or already checked out.")
 
 
-    def return_book(self, title):
+    def return_book(title):
         for book in self._books:
             if book.title == title and book._is_checked_out:
                 book._is_checked_out = False
